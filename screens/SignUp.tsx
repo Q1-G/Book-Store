@@ -14,7 +14,7 @@ const SignUp = () => {
       <Text style={styles.title}>Book Store</Text>
       <Text style={styles.heading}>Sign Up</Text>
       <Image
-        source={require('./assets/user.png')}
+        source={require('../assets/user.png')}
         style={styles.image}
       />
       <TextInput

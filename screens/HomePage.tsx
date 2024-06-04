@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Button, StyleSheet, Alert } from 'react-native';
-import { useBooks, useBooksActions } from './BookContext'; 
+import { View, Text, Button, StyleSheet, Alert, Image } from 'react-native';
+import { useBooks, useBooksActions } from '../BookContext'; 
 import { useNavigation } from '@react-navigation/native';
 
 const HomePage: React.FC = () => {
@@ -48,6 +48,7 @@ const HomePage: React.FC = () => {
     <View style={styles.container}>
       <Text style={styles.title}>Book Store</Text>
       <Text style={styles.subTitle}>Welcome back</Text>
+      <Image source={require('../assets/home.jpg')} style={styles.image} />
       <Text style={styles.heading}>The last book you read is</Text>
       {lastBookRead && (
         <View style={styles.bookDetails}>
@@ -106,6 +107,14 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     paddingLeft: 85,
   },
+  image: {
+    width: 400,
+    height:200,
+    alignSelf: 'center',
+    borderRadius: 10,
+    marginTop: 5,
+    marginBottom:20,
+  },
   heading: {
     color: '#75FA8D',
     fontSize: 20,
@@ -122,7 +131,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
   newBookButtonContainer: {
-    marginTop: 100,
+    marginTop: 20,
   },
   mainSummaryContainer: {
     position: 'absolute',

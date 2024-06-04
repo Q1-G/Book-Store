@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet, ScrollView, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { useBooks, useBooksActions } from './BookContext';
+import { useBooks, useBooksActions } from '../BookContext';
 
 const BookHistory: React.FC = () => {
   const navigation = useNavigation();

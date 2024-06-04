@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
-import { useBooks } from './BookContext';
+import { useBooks } from '../BookContext';
 import { useNavigation } from '@react-navigation/native';
 
 const Genre: React.FC = () => {

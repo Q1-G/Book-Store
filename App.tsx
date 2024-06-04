@@ -3,15 +3,15 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useColorScheme } from 'react-native';
 import { BooksProvider } from './BookContext'; 
-import LandingPage from './LandingPage';
-import LoginPage from './LoginPage';
-import SignUp from './SignUp';
-import ForgotPassword from './ForgotPassword';
-import Genre from './Genre';
-import BookEntry from './BookEntry';
-import BookHistory from './BookHistory';
+import LandingPage from './screens/LandingPage';
+import LoginPage from './screens/LoginPage';
+import SignUp from './screens/SignUp';
+import ForgotPassword from './screens/ForgotPassword';
+import Genre from './screens/Genre';
+import BookEntry from './screens/BookEntry';
+import BookHistory from './screens/BookHistory';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import HomePage from './HomePage';
+import HomePage from './screens/HomePage';
 
 const Stack = createNativeStackNavigator();
 

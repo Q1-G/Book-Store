@@ -20,7 +20,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.welcomeText}>Welcome to</Text>
       <Text style={styles.title}>BookStore</Text>
-      <Image source={require('./assets/Book.jpg')} style={styles.image} />
+      <Image source={require('../assets/Book.jpg')} style={styles.image} />
       <View style={styles.descriptionContainer}>
         <Text style={styles.descriptionContainerText}>The app that stores all your reading data</Text>
       </View>

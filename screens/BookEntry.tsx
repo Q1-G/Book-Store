@@ -3,7 +3,7 @@ import { View, Text, Button, StyleSheet, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import RNPickerSelect from 'react-native-picker-select';
 import { Alert } from 'react-native';
-import { useBooks, useBooksActions } from './BookContext'; 
+import { useBooks, useBooksActions } from '../BookContext'; 
 
 interface BookEntryProps {}
 
